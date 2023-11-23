@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en"
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <meta name="author" content="kurunhex">
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1000">
+    <title>CSS LAYOUT</title>
+
+    <style>
+        body {
+         background-color: aqua;
+         padding:50px 70px;
+        }
+
+          
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            grid-template-rows: 80px 70px 1fr 1fr 70px;
+            height: 100vh;
+            gap: 2px;
+        }
+
+        h1 {
+            color: rgb(5, 19, 14);
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #h2 {
+            color: black;
+        }
+     
+        #h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #Hi {
+            color: white;
+            font-size: 200%;
+        }
+        
+        header {
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border: 2px solid black;
+        }
+
+        nav {
+            background-color: lightseagreen;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border: 2px solid black;
+        }
+ 
+        .topnav {
+            background-color: darkcyan;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: lightblue;
+            color: black;
+        }
+
+          section {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: lightseagreen;
+            border: 20px solid black;
+            padding: 10px;
+          }
+
+          aside{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 125%;
+          }
+
+          article {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-color: rgb(156, 226, 34);
+            border: 2px solid black;
+            padding: 10px;   
+        }
+
+        footer {
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+</body>
+   <h1>HTML LAYOUT</h1>
+         <div class="grid">
+            <header>
+                <h2 id="h1">PERFECT TIP'S FOR STUDYING</h2>
+            </header>
+        <nav>        
+             <div class="topnav">
+
+                 <p style="text-align: center;"> <a href="Take a break.html"> TIPS 1 </a></p>
+                 <p style="text-align: center;"> <a href="take down notes.html"> TIPS 2 </a></p>
+                 <p style="text-align: center;"> <a href="STUDY WITH CLASSMATES.html">TIPS 3</a></p>
+ 
+
+        </div>
+         </nav>
+
+<section>
+    <h2 id="h2">STUDY WITH CLASSMATES</h2>
+    <p> Working with classmates encourages an interactive <br>
+        environment to keep you engaged. This gives you a chance to test your <br>
+          knowledge with others,quiz each other. Workin*g together helps develop good <br>
+         study habits, increases collaboration on group projects, and boosts confidence.<br>
+          “Find a partner to compare notes with,” Working together helps develop good study habits, increases <br>
+         collaboration on group projects, and boosts confidence. “Find a partner to compare notes with,”.</p><br>
+</section>
+<aside>
+    <h2 id="h2">BENEFITS OF STUDYING WITH CLASSMATES</h2>
+    <p>vFindings point to higher motivation, better learning retention and greater engagement with tasks as<br> 
+        some of<br>
+         the benefits of learning with friends. Plus, there are practical benefits; friends often share class<br>
+          notes, strategies for time management and useful study tools with each other. It's a win-win for <br>
+          everyone.</p><br>
+</aside>
+<article>
+    <h2 id="h2">STUDENTS LEARN BETTER WITH CLASSMATES</h2>
+    <P>VBy first working in groups with their peers to learn, students receive additional support that they would<br>
+        not receive in a teacher-centered lesson. Furthermore, by being solely responsible for teaching that task<br>
+         to another group, students take responsibility for their learning.</P><br>
+</article>
+<footer>
+    <h1 id="hi">DONT GIVE UP KEEP GOING</h1>
+</footer>
+         </div>
+         </body>
+</html>
